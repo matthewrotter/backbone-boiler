@@ -1,0 +1,28 @@
+
+  /* TEAM */
+  Driver: Chuco
+  Contact: skip@odeccorp.com
+  Twitter: @chuco
+  Location: Portland, OR. USA
+
+  The Kid: Eli Rubel
+  Contact: eli@odeccorp.com
+  Twitter: 
+  Location: Portland, OR. USA
+
+  Bob: Justin Thiele
+  Contact: justin@odeccorp.com
+  Twitter: 
+  Location: Portland, OR. USA
+
+
+  /* THANKS */
+  Boilermaker: Thomas Davis, http://backbonetutorials.com/organizing-backbone-using-modules/
+
+
+  /* SITE */
+  Last update: 2012/04/05
+  Standards: HTML5, CSS3, ES5
+  Components: jQuery, Underscore, Backbone, RequireJS
+  Stizack: Linux, Rails, Mongodb
+

@@ -4,7 +4,8 @@ define([
   'Underscore',
   'Backbone',
   'views/home',
-], function($, _, Backbone, homeView){
+  'utils'
+], function($, _, Backbone, homeView, Utils){
   var AppRouter = Backbone.Router.extend({
     routes: {
       // Default
@@ -13,6 +14,7 @@ define([
     defaultAction: function(actions){
       // We have no matching route, lets display the home page 
       $('#page').html(homeView.render().el);
+      Utils.setUpFileDrop();
     }
   });
 
