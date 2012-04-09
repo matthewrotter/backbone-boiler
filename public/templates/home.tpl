@@ -1,4 +1,4 @@
-Welcome to the Pizaprizika!
+This is the template
 
 <ul>
   <li>What up, <%= name %>!</li>
