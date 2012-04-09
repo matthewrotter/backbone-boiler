@@ -1,11 +1,11 @@
 // Filename: router.js
 define([
-  'jQuery',
-  'Underscore',
-  'Backbone',
+  'jquery',
+  'use!backbone',
   'views/home',
   'utils'
-], function($, _, Backbone, homeView, Utils){
+], function($, Backbone, homeView, Utils){
+
   var AppRouter = Backbone.Router.extend({
     routes: {
       // Default
@@ -19,7 +19,7 @@ define([
   });
 
   var initialize = function(){
-    var app_router = new AppRouter;
+    var app_router = new AppRouter();
     Backbone.history.start();
   };
   return { 

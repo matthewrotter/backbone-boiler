@@ -1,9 +1,8 @@
 define([
-  'jQuery',
-  'Underscore',
-  'Backbone',
+  'jquery',
+  'use!backbone',
   'tpl!templates/home.tpl'
-], function($, _, Backbone, tmpl){
+], function($, Backbone, tmpl){
 // console.log(tmpl);
   var home = Backbone.View.extend({
     tagName: 'div',
