@@ -1,28 +1,43 @@
-
-  /* TEAM */
-  Driver: Chuco
-  Contact: skip@odeccorp.com
-  Twitter: @chuco
-  Location: Portland, OR. USA
-
-  The Kid: Eli Rubel
-  Contact: eli@odeccorp.com
-  Twitter: 
-  Location: Portland, OR. USA
-
-  Bob: Justin Thiele
-  Contact: justin@odeccorp.com
-  Twitter: 
-  Location: Portland, OR. USA
+/* the humans responsible & colophon */
+/* humanstxt.org */
 
 
-  /* THANKS */
-  Boilermaker: Thomas Davis, http://backbonetutorials.com/organizing-backbone-using-modules/
+/* TEAM */
+  <your title>: <your name>
+  Site:
+  Twitter:
+  Location:
+
+/* THANKS */
+  Names (& URL):
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software:
 
 
-  /* SITE */
-  Last update: 2012/04/05
-  Standards: HTML5, CSS3, ES5
-  Components: jQuery, Underscore, Backbone, RequireJS
-  Stizack: Linux, Rails, Mongodb
 
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:
