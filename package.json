@@ -1,0 +1,15 @@
+{
+  "author": "Matthew Skip Rotter",
+  "name": "boiler",
+  "version": "0.0.0",
+  "dependencies": {
+    "rimraf": ">=2.0.1",
+    "requirejs": ">=1.0.8",
+    "grunt-less": ">=0.1.4"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
