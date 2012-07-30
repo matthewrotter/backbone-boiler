@@ -1,0 +1,20 @@
+{
+  "author": "@chuco",
+  "name": "backbone-boiler-app-skipper",
+  "description": "My version of the boilerplate",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matthewrotter/backbone-boiler.git"
+  },
+  "dependencies": {
+    "rimraf": ">= 2.0.0",
+    "requirejs": ">= 2.0.4",
+    "grunt-less": ">= 0.1.5"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

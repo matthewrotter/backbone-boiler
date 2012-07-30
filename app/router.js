@@ -14,7 +14,7 @@ function(app, Example) {
     },
 
     index: function() {
-      Example.initialize()
+      Example.initialize();
     }
   });
 
