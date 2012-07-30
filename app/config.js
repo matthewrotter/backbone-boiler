@@ -1,31 +1,31 @@
 // Set the require.js configuration for your application.
 require.config({
-  // Initialize the application with the main application file
+
+  // Initialize the application with the main application file.
   deps: ["main"],
 
   paths: {
-    // JavaScript folders
+    // JavaScript folders.
     libs: "../assets/js/libs",
     plugins: "../assets/js/plugins",
+    vendor: "../assets/js/vendor",
 
-    // Libraries
+    // Libraries.
     jquery: "../assets/js/libs/jquery",
-    underscore: "../assets/js/libs/underscore",
+    lodash: "../assets/js/libs/lodash",
     backbone: "../assets/js/libs/backbone",
-
-    // Shim Plugin
-    use: "../assets/js/plugins/use",
-    text: "../assets/js/plugins/text"
+    text: "../assets/js/plugins/text",
   },
 
-  use: {
+  shim: {
+    // Backbone library depends on lodash and jQuery.
     backbone: {
-      deps: ["use!underscore", "jquery"],
-      attach: "Backbone"
-    },
-
-    underscore: {
-      attach: "_"
+      deps: ["lodash", "jquery"],
+      exports: "Backbone"
     }
-  }
+
+  },
+
+  urlArgs: "bust=" +  (new Date()).getTime()
+
 });

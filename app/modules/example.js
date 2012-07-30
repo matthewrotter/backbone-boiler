@@ -1,57 +1,38 @@
 define([
-  "namespace",
-
-  // Libs
+  "app",
   "jquery",
-  "use!backbone",
+  "lodash",
+  "backbone",
 
-  // Modules
-
-  // Plugins
   "text!templates/example.html"
 ],
 
-function(namespace, $, Backbone, tmpl) {
+function(app, $, _, Backbone, tmpl) {
 
-  // Create a new module
-  var Example = namespace.module();
+  var Example = app.module();
 
-  // Example extendings
-  Example.Model = Backbone.Model.extend({ /* ... */ });
-  Example.Collection = Backbone.Collection.extend({ /* ... */ });
-  Example.Router = Backbone.Router.extend({ /* ... */ });
+  // set shit up yo
+  Example.initialize = function() {
+    var main = new Example.Views.Main();
+    $('#main').html(main.render().el);
+  };
 
-  // This will fetch the tutorial template and render it.
-  Example.Views.Tutorial = Backbone.View.extend({
+  Example.Views.Main = Backbone.View.extend({
+    tagName: 'div',
+
+    template: _.template(tmpl),
+
+    initialize: function() {
+      // this.model.on('change', this.render, this);
+    },
 
     render: function() {
-      // $(this.el).html(_.template(tmpl, {}));
-
-      var myOptions = {
-        center: new google.maps.LatLng(45.523262,-122.676183),
-        zoom: 13,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById('map_canvas'),
-          myOptions);
-
-      $.getJSON("/api.php").done(function(data) {
-        $.each(data, function(idx, val) {
-          var latlng = new google.maps.LatLng(val.downloaded_lat,val.downloaded_lon);
-          new google.maps.Marker({
-            position: latlng,
-            map: map
-          });
-          // console.log(latlng);
-        });
-      });
-
-
+      // this.$el.html(this.template(this.model.toJSON()));
+      this.$el.html(this.template());
       return this;
     }
   });
 
-  // Required, return the module for AMD compliance
   return Example;
 
 });
